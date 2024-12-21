@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kavindu.shavinda\\source\\repos\\BookShopAPI\\BookShopAPI\\BookShopAPI.csproj": {}
+    "D:\\GitHub\\bookshop-webapi-crud\\BookShopAPI\\BookShopAPI\\BookShopAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kavindu.shavinda\\source\\repos\\BookShopAPI\\BookShopAPI\\BookShopAPI.csproj": {
+    "D:\\GitHub\\bookshop-webapi-crud\\BookShopAPI\\BookShopAPI\\BookShopAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kavindu.shavinda\\source\\repos\\BookShopAPI\\BookShopAPI\\BookShopAPI.csproj",
+        "projectUniqueName": "D:\\GitHub\\bookshop-webapi-crud\\BookShopAPI\\BookShopAPI\\BookShopAPI.csproj",
         "projectName": "BookShopAPI",
-        "projectPath": "C:\\Users\\kavindu.shavinda\\source\\repos\\BookShopAPI\\BookShopAPI\\BookShopAPI.csproj",
+        "projectPath": "D:\\GitHub\\bookshop-webapi-crud\\BookShopAPI\\BookShopAPI\\BookShopAPI.csproj",
         "packagesPath": "C:\\Users\\kavindu.shavinda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kavindu.shavinda\\source\\repos\\BookShopAPI\\BookShopAPI\\obj\\",
+        "outputPath": "D:\\GitHub\\bookshop-webapi-crud\\BookShopAPI\\BookShopAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -48,6 +48,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

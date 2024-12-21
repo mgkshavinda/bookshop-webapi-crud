@@ -1,3 +1,8 @@
+using BookShopAPI.Data;
+using BookShopAPI.Service;
+using Microsoft.EntityFrameworkCore;
+
+
 
 namespace BookShopAPI
 {
@@ -12,6 +17,14 @@ namespace BookShopAPI
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            // Add database context
+            builder.Services.AddDbContext<BookShopContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+            // Add services
+            builder.Services.AddScoped<IBookService, BookService>();
 
             var app = builder.Build();
 
